@@ -3,5 +3,5 @@ module.exports = {
     'vuetify'
   ],
   publicPath:'/lol-tools',
-  outputDir: 'public'
+  outputDir: 'docs'
 }
