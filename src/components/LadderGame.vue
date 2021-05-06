@@ -52,16 +52,13 @@ export default {
     data: () => ({
         amenities: [],
         list: ['프로파오후','Poltn','샤쓰','Kaco','DHA','댄디댄디','럿트','바둠랑이','욕먹기대회우승자'],
-        listColorSet:[],
+        listColorSet:['#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff'],
         colorSet:['#2b336b','#d20b0b','#ecc80f','#738934'],
         newId:'',
         teamLength:2,
     }),
     components:{
         ButtonCounter,
-    },
-    create(){
-        this.listColorSet = Array.from(Array(this.list.length),()=>'#fff')
     },
     methods:{
         addUser(){
