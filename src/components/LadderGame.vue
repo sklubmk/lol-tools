@@ -74,11 +74,15 @@ export default {
             this.newId = ''
         },
         setTeam(){
-            if(!this.amenities.length)
+            if(!this.amenities.length){
                 alert('팀원 클릭해서 고르셈')
+                return;
+            }
 
-            if(this.amenities.length % this.teamLength !== 0)
+            if(this.amenities.length % this.teamLength !== 0){
                 alert('선택된 팀원 숫자가 안맞음')
+                return;
+            }
 
             const teamEachMembers = this.amenities.length / this.teamLength;
             const teamNums = []
